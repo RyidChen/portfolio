@@ -20,7 +20,9 @@ describe('HomeView', () => {
     const commercialProjectList = wrapper.get('#project-list')
 
     expect(commercialProjectList.findAll('[data-project-category="vue"]')).toHaveLength(0)
-    expect(commercialProjectList.findAll('[data-project-category="react"]').length).toBeGreaterThan(0)
+    expect(commercialProjectList.findAll('[data-project-category="react"]').length).toBeGreaterThan(
+      0,
+    )
   })
 
   it('connects filter controls to the live project results', async () => {
@@ -40,7 +42,7 @@ describe('HomeView', () => {
   it('presents three public frontend demos with live and source links', () => {
     const wrapper = mount(HomeView)
 
-    expect(wrapper.get('#public-projects-title').text()).toBe('可公開操作的前端作品')
+    expect(wrapper.get('#public-projects-title').text()).toBe('做過的一些作品')
     expect(wrapper.text()).toContain('資料由本地 Mock 或前端模擬器提供，尚未串接後端 API')
     expect(wrapper.get('a[href="https://toki-tabi.yk7579854.workers.dev"]')).toBeTruthy()
     expect(wrapper.get('a[href="https://shard-pulse.yk7579854.workers.dev"]')).toBeTruthy()
