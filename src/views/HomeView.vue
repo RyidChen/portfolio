@@ -286,25 +286,6 @@ const filteredProjects = computed(() => {
       </div>
     </section>
 
-    <section class="learning-section section-shell section-block" aria-labelledby="learning-title">
-      <div>
-        <p class="eyebrow">Now Building</p>
-        <h2 id="learning-title">最近在做什麼</h2>
-      </div>
-      <div class="learning-grid">
-        <article>
-          <span>01</span>
-          <h3>個人前端作品</h3>
-          <p>以 Vue 3 重建作品集，持續加入可公開的完整案例與開發紀錄。</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Java / Spring Boot / C#</h3>
-          <p>正在學習 Java、Spring Boot 與 C#，希望逐步理解畫面背後的資料與服務。</p>
-        </article>
-      </div>
-    </section>
-
     <section id="contact" class="contact-section section-shell" aria-labelledby="contact-title">
       <p class="eyebrow">Let's Work Together</p>
       <h2 id="contact-title">有適合的機會，歡迎聊聊。</h2>
